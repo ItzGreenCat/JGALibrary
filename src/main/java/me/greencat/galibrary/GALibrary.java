@@ -17,8 +17,13 @@ public class GALibrary {
     public File gameDir = null;
     public File entryPoint = null;
 
+    public String main;
+    public String menu;
+
     public Commalization gameBootstrap = Commalization.getCommalization("Bootstrap");
     public String gameName;
+
+    public Screen screen;
 
     public static void main(String[] args) {
         instance = new GALibrary();
@@ -52,19 +57,37 @@ public class GALibrary {
         } else {
             this.entryPoint = entryPoint;
         }
-        Command setName = new Command("setName");
+        Command setName = new Command("NAME");
         setName.addNode("name", ActionType.STRING);
         gameBootstrap.registerCommand(setName);
+        Command main = new Command("MAIN");
+        main.addNode("file",ActionType.STRING);
+        gameBootstrap.registerCommand(main);
+        Command menu = new Command("MENU");
+        menu.addNode("file",ActionType.STRING);
+        gameBootstrap.registerCommand(menu);
 
         ScriptReader.read(entryPoint,it -> {
             GALibrary.getGALibrary().LOGGER.info("命令:" + it);
             FormattedCommand formattedCommand = gameBootstrap.format(it);
             switch(formattedCommand.getCommand()){
-                case "setName":
+                case "NAME":
                     gameName = formattedCommand.getString("name");
                     GALibrary.getGALibrary().LOGGER.info("成功加载游戏名:" + gameName);
                     break;
+                case "MAIN":
+                    this.main = formattedCommand.getString("file");
+                    break;
+                case "MENU":
+                    this.menu = formattedCommand.getString("file");
+                    break;
             }
         });
+        if (gameName != null && this.main != null && this.menu != null) {
+            this.screen = new Screen(gameName,this.main,this.menu);
+        } else {
+            GALibrary.getGALibrary().LOGGER.info("init.gdst信息不全");
+            throw new RuntimeException();
+        }
     }
 }

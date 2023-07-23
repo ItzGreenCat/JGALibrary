@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="727634b9-7fd3-44d7-9273-a3c0b1094005" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameTest/init.gdst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/Commalization-1.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/GALibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/utils/ScriptReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="727634b9-7fd3-44d7-9273-a3c0b1094005" name="更改" comment="Create a basic gradle workspace and write a few codes">
+      <change afterPath="$PROJECT_DIR$/gameTest/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gameTest/dungeon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gameTest/main.gdst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gameTest/menu.gdst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/utils/BackgroundPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/msyh.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameTest/init.gdst" beforeDir="false" afterPath="$PROJECT_DIR$/gameTest/init.gdst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/GALibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/greencat/galibrary/GALibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,16 +71,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/greencat/IdeaProjects/JGALibrary/libs&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/greencat/IdeaProjects/JGALibrary/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +169,39 @@
       <option name="presentableId" value="Default" />
       <updated>1689862090492</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create a basic gradle workspace and write a few codes">
+      <option name="closed" value="true" />
+      <created>1689871792964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689871792964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create a basic gradle workspace and write a few codes">
+      <option name="closed" value="true" />
+      <created>1689871812817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689871812817</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create a basic gradle workspace and write a few codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a basic gradle workspace and write a few codes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

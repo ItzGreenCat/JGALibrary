@@ -1,1 +1,3 @@
-setName name:"测试游戏"
+NAME name:"测试游戏"
+MAIN file:"main.gdst"
+MENU file:"menu.gdst"
